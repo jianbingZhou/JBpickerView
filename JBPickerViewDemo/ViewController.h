@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)dataPicker:(id)sender;
 
+- (IBAction)cityPicker:(id)sender;
 @end
 

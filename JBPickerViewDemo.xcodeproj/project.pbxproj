@@ -16,6 +16,7 @@
 		AA97EAAD1D58264900D25BED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA97EAAB1D58264900D25BED /* LaunchScreen.storyboard */; };
 		AA97EAB81D58264900D25BED /* JBPickerViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA97EAB71D58264900D25BED /* JBPickerViewDemoTests.m */; };
 		AA97EAC31D58264900D25BED /* JBPickerViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA97EAC21D58264900D25BED /* JBPickerViewDemoUITests.m */; };
+		AA97EAD31D58265F00D25BED /* JBPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA97EAD21D58265F00D25BED /* JBPickerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		AA97EABE1D58264900D25BED /* JBPickerViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JBPickerViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA97EAC21D58264900D25BED /* JBPickerViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBPickerViewDemoUITests.m; sourceTree = "<group>"; };
 		AA97EAC41D58264900D25BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA97EAD11D58265F00D25BED /* JBPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBPickerView.h; sourceTree = "<group>"; };
+		AA97EAD21D58265F00D25BED /* JBPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBPickerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,7 @@
 		AA97EA991D58264900D25BED /* JBPickerViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				AA97EAD01D58265F00D25BED /* JBPickerView */,
 				AA97EA9D1D58264900D25BED /* AppDelegate.h */,
 				AA97EA9E1D58264900D25BED /* AppDelegate.m */,
 				AA97EAA01D58264900D25BED /* ViewController.h */,
@@ -141,6 +145,15 @@
 				AA97EAC41D58264900D25BED /* Info.plist */,
 			);
 			path = JBPickerViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		AA97EAD01D58265F00D25BED /* JBPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				AA97EAD11D58265F00D25BED /* JBPickerView.h */,
+				AA97EAD21D58265F00D25BED /* JBPickerView.m */,
+			);
+			path = JBPickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +288,7 @@
 			files = (
 				AA97EAA21D58264900D25BED /* ViewController.m in Sources */,
 				AA97EA9F1D58264900D25BED /* AppDelegate.m in Sources */,
+				AA97EAD31D58265F00D25BED /* JBPickerView.m in Sources */,
 				AA97EA9C1D58264900D25BED /* main.m in Sources */,
 				AA97EAA81D58264900D25BED /* JBPickerViewDemo.xcdatamodeld in Sources */,
 			);
@@ -416,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JBPickerViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jianbing-Zhou.JBPickerViewDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JBPickerViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jianbing-Zhou.JBPickerViewDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -500,6 +516,7 @@
 				AA97EAC91D58264A00D25BED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA97EACA1D58264A00D25BED /* Build configuration list for PBXNativeTarget "JBPickerViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +525,7 @@
 				AA97EACC1D58264A00D25BED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA97EACD1D58264A00D25BED /* Build configuration list for PBXNativeTarget "JBPickerViewDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +534,7 @@
 				AA97EACF1D58264A00D25BED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

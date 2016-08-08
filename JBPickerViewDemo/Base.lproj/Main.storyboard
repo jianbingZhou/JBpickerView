@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,7 +17,85 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baL-QL-tHS">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="LlY-EX-hQx"/>
+                                    <constraint firstAttribute="height" constant="30" id="dFu-ns-bvU"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LlY-EX-hQx"/>
+                                        <exclude reference="dFu-ns-bvU"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="LlY-EX-hQx"/>
+                                        <include reference="dFu-ns-bvU"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="dataPicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eM6-zs-LMw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrb-Ww-QCh">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="HTY-Pn-JKR"/>
+                                    <constraint firstAttribute="height" constant="30" id="a17-w3-SI6"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="HTY-Pn-JKR"/>
+                                        <exclude reference="a17-w3-SI6"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="HTY-Pn-JKR"/>
+                                        <include reference="a17-w3-SI6"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="cityPicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kbV-Uu-JiJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="xrb-Ww-QCh" secondAttribute="trailing" constant="50" id="GRg-RL-kHj"/>
+                            <constraint firstItem="baL-QL-tHS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="Rae-fX-qxQ"/>
+                            <constraint firstItem="xrb-Ww-QCh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="hlX-iA-JPu"/>
+                            <constraint firstItem="baL-QL-tHS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="kzT-hr-ryE"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="baL-QL-tHS"/>
+                                <exclude reference="xrb-Ww-QCh"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Rae-fX-qxQ"/>
+                                <exclude reference="kzT-hr-ryE"/>
+                                <exclude reference="GRg-RL-kHj"/>
+                                <exclude reference="hlX-iA-JPu"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="baL-QL-tHS"/>
+                                <include reference="xrb-Ww-QCh"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Rae-fX-qxQ"/>
+                                <include reference="kzT-hr-ryE"/>
+                                <include reference="GRg-RL-kHj"/>
+                                <include reference="hlX-iA-JPu"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
