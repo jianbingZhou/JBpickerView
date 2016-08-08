@@ -263,6 +263,8 @@
     NSString *countName = countrys[index2];
 
     _resultString = [NSString stringWithFormat:@"%@-%@-%@",provinceName,cityName,countName];
+    
+    
 }
 //toolbar 按钮的监听
 -(void)doneClick
@@ -281,7 +283,11 @@
             
         }else
         {
-            _resultString = self.dataArray[0][pikcerViewDefaultIndex];
+            NSString *provinceName = self.dataArray[0][pikcerViewDefaultIndex];
+            
+            NSString *cityName = [[self.dataArray[1] objectForKey:provinceName] objectAtIndex:0];
+            NSString *countyName = [[self.dataArray[2] objectForKey:cityName] objectAtIndex:0];
+            _resultString = [NSString stringWithFormat:@"%@-%@-%@",provinceName,cityName,countyName];
         }
         
     }
